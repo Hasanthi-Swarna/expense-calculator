@@ -17,7 +17,8 @@ At the end of the month, it shows total money **received**, **spent**, and wheth
 
 ---
 
-#Example Output
+# Example Output
+
 Would you like to continue to the transactions?(y/n): y
 Spent(-) or Received(+): +
 Enter amount received: 1000
