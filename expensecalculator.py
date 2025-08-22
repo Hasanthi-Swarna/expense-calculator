@@ -6,19 +6,21 @@
 #If at the end of the month, amount spent is more, it will display, "Oops! More money spent. Amount spent is "
 
 profit = 0
-def credit():
+def credit(): #calculates amount received
     global profit
     n = int(input("Enter amount received: "))
     profit += n
     print("Total money received till now: ",profit)
+
+
 loss = 0
-def debit():
+def debit(): #calculates amount spent
     global loss
     n = int(input("Enter the amount spent: "))
     loss += n
     print("Total money spent till now: ",loss)
 
-def transactions():
+def transactions(): #takes input of amount received or spent
     trans = input("Spent(-) or Received(+): ")
     if trans == "-":
         debit()
@@ -29,7 +31,7 @@ def transactions():
         transactions()
     request()
 
-def monthly():
+def monthly(): #calculates monthly expenses
     global profit, loss
     print("Amount received this month: ", profit)
     print("Amount spent this month: ",loss)
@@ -41,7 +43,7 @@ def monthly():
         print("Money spent and received is balanced.")
     request()
 
-def request():
+def request(): #evaluates requests. Either transactions or monthly reports
     req = input("Would you like to continue to the transactions?(y/n): ")
     if req == "y" or req == "Y":
         transactions()
@@ -59,4 +61,4 @@ def request():
         print("Please enter proper input")
         request()
 
-request()
+request() #calling this method initiates the process
