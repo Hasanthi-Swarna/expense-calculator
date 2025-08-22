@@ -17,3 +17,20 @@ At the end of the month, it shows total money **received**, **spent**, and wheth
 
 ---
 
+#Example Output
+Would you like to continue to the transactions?(y/n): y
+Spent(-) or Received(+): +
+Enter amount received: 1000
+Total money received till now: 1000
+
+Would you like to continue to the transactions?(y/n): y
+Spent(-) or Received(+): -
+Enter the amount spent: 700
+Total money spent till now: 700
+
+Would you like to continue to the transactions?(y/n): n
+Would you like to get the monthly reports? (y/n): y
+
+Amount received this month: 1000
+Amount spent this month: 700
+Hurray! Profit is 300
